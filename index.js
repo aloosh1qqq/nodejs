@@ -11,9 +11,12 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 
 
-const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${
-  process.env.MONGO_PASSWORD
-}@cluster0-ntrwp.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
+// const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${
+//   process.env.MONGO_PASSWORD
+// }@cluster0-ntrwp.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
+
+
+const MONGODB_URI = `mongodb+srv://ali:hple1901whp@ecommerce.357qh.mongodb.net/?retryWrites=true&w=majority`;
 
 const store = new MongoDBStore({
     uri: MONGODB_URI,
